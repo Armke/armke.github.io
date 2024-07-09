@@ -1,8 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
-    <url>/hello-world.html</url>
+    <title>PCB</title>
+    <url>/PCB.html</url>
+    <content><![CDATA[]]></content>
+      <tags>
+        <tag>PCB</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Typora使用技巧</title>
+    <url>/Typora%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7.html</url>
+    <content><![CDATA[]]></content>
+      <tags>
+        <tag>Typora</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>blog搭建总结</title>
+    <url>/blog%E6%90%AD%E5%BB%BA%E6%80%BB%E7%BB%93.html</url>
+    <content><![CDATA[]]></content>
+      <tags>
+        <tag>blog</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>基于stm32+rc522的门禁系统</title>
+    <url>/%E5%9F%BA%E4%BA%8Estm32-rc522%E7%9A%84%E9%97%A8%E7%A6%81%E7%B3%BB%E7%BB%9F.html</url>
+    <content><![CDATA[]]></content>
+      <tags>
+        <tag>stm32</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>模电</title>
+    <url>/%E6%A8%A1%E7%94%B5.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>模集</title>
+    <url>/%E6%A8%A1%E9%9B%86.html</url>
     <content><![CDATA[]]></content>
   </entry>
 </search>

@@ -21,23 +21,43 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"armke.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.20.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"always","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Armke的笔记">
-<meta property="og:url" content="https://armke.github.io/index.html">
+    <meta name="description" content="6.22MOSFET结构NMOS结构： 衬底为P型，重参杂n区形成源级和漏级，重参杂的多晶硅为栅极，有一层SiO2使得栅极和衬底隔离，此为增强型nmos，源极和漏极是对称的。 源级提供载流子，漏级收集载流子 NMOS的衬底必须接系统最低电压  MOS符号：  6.23I-V特性  Id漏源电流，μn载流子迁移率，CW表示单位长度的总电容，W栅宽，L是栅长  工作在阴影部分，也就是三极管区的时候才成">
+<meta property="og:type" content="article">
+<meta property="og:title" content="模集">
+<meta property="og:url" content="https://armke.github.io/%E6%A8%A1%E9%9B%86.html">
 <meta property="og:site_name" content="Armke的笔记">
+<meta property="og:description" content="6.22MOSFET结构NMOS结构： 衬底为P型，重参杂n区形成源级和漏级，重参杂的多晶硅为栅极，有一层SiO2使得栅极和衬底隔离，此为增强型nmos，源极和漏极是对称的。 源级提供载流子，漏级收集载流子 NMOS的衬底必须接系统最低电压  MOS符号：  6.23I-V特性  Id漏源电流，μn载流子迁移率，CW表示单位长度的总电容，W栅宽，L是栅长  工作在阴影部分，也就是三极管区的时候才成">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://github.com/Armke/Armke.github.io/blob/main/img/modian/mos%E5%99%A8%E4%BB%B6%E7%BB%93%E6%9E%84.png?raw=true">
+<meta property="og:image" content="https://github.com/Armke/Armke.github.io/blob/main/img/modian/mos%E7%AC%A6%E5%8F%B7.png?raw=true">
+<meta property="og:image" content="https://github.com/Armke/Armke.github.io/blob/main/img/modian/IV%E5%85%AC%E5%BC%8F.png?raw=true">
+<meta property="og:image" content="https://github.com/Armke/Armke.github.io/blob/main/img/modian/%E5%85%B3%E7%B3%BB.png?raw=true">
+<meta property="og:image" content="https://github.com/Armke/Armke.github.io/blob/main/img/modian/%E9%A5%B1%E5%92%8C%E5%85%AC%E5%BC%8F.png?raw=true">
+<meta property="og:image" content="https://github.com/Armke/Armke.github.io/blob/main/img/modian/Vov.png?raw=true">
+<meta property="og:image" content="https://github.com/Armke/Armke.github.io/blob/main/img/modian/%E5%B0%8F%E7%BB%931.png?raw=true">
+<meta property="og:image" content="https://github.com/Armke/Armke.github.io/blob/main/img/modian/8%E8%BE%B9%E5%BD%A2.png?raw=true">
+<meta property="og:image" content="https://github.com/Armke/Armke.github.io/blob/main/img/modian/%E5%85%B1%E6%BA%90%E6%9E%81.png?raw=true">
+<meta property="og:image" content="https://github.com/Armke/Armke.github.io/blob/main/img/modian/gm.png?raw=true">
+<meta property="og:image" content="https://github.com/Armke/Armke.github.io/blob/main/img/modian/%E5%B0%8F%E4%BF%A1%E5%8F%B7%E6%A8%A1%E5%9E%8B.png?raw=true">
+<meta property="og:image" content="https://github.com/Armke/Armke.github.io/blob/main/img/modian/%E5%AE%8C%E6%95%B4.png?raw=true">
+<meta property="og:image" content="https://github.com/Armke/Armke.github.io/blob/main/img/modian/%E5%85%B1%E6%BC%8F%E7%BA%A7.png?raw=true">
+<meta property="og:image" content="https://github.com/Armke/Armke.github.io/blob/main/img/modian/%E5%8F%8Cmos.png?raw=true">
+<meta property="og:image" content="https://github.com/Armke/Armke.github.io/blob/main/img/modian/%E6%B2%9F%E9%95%BF%E8%B0%83%E5%88%B6%E6%95%88%E5%BA%94%E7%9A%84%E5%B0%8F%E4%BF%A1%E5%8F%B7.png?raw=true">
+<meta property="article:published_time" content="2024-06-21T13:14:15.000Z">
+<meta property="article:modified_time" content="2024-07-09T09:50:49.026Z">
 <meta property="article:author" content="Armke">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://github.com/Armke/Armke.github.io/blob/main/img/modian/mos%E5%99%A8%E4%BB%B6%E7%BB%93%E6%9E%84.png?raw=true">
 
 
-<link rel="canonical" href="https://armke.github.io/">
+<link rel="canonical" href="https://armke.github.io/%E6%A8%A1%E9%9B%86.html">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://armke.github.io/%E6%A8%A1%E9%9B%86.html","path":"模集.html","title":"模集"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Armke的笔记</title>
+<title>模集 | Armke的笔记</title>
   
 
 
@@ -182,7 +202,7 @@ mjx-container[display="true"] + br {
 
     <a href="/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">Armke的笔记</h1>
+      <p class="site-title">Armke的笔记</p>
       <i class="logo-line"></i>
     </a>
   </div>
@@ -235,7 +255,7 @@ mjx-container[display="true"] + br {
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -248,6 +268,7 @@ mjx-container[display="true"] + br {
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#6-22"><span class="nav-number">1.</span> <span class="nav-text">6.22</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#MOSFET%E7%BB%93%E6%9E%84"><span class="nav-number"></span> <span class="nav-text">MOSFET结构</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#MOS%E7%AC%A6%E5%8F%B7%EF%BC%9A"><span class="nav-number"></span> <span class="nav-text">MOS符号：</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#6-23"><span class="nav-number">1.</span> <span class="nav-text">6.23</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#I-V%E7%89%B9%E6%80%A7"><span class="nav-number"></span> <span class="nav-text">I-V特性</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BA%8C%E7%BA%A7%E6%95%88%E5%BA%94"><span class="nav-number"></span> <span class="nav-text">二级效应</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1%E4%BD%93%E6%95%88%E5%BA%94%EF%BC%9A"><span class="nav-number"></span> <span class="nav-text">1体效应：</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#6-24"><span class="nav-number">1.</span> <span class="nav-text">6.24</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BD%93%E6%95%88%E5%BA%94%E7%9A%84%E5%9D%8F%E7%9A%84%E6%96%B9%E9%9D%A2"><span class="nav-number"></span> <span class="nav-text">体效应的坏的方面</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E6%B2%9F%E9%81%93%E9%95%BF%E5%BA%A6%E8%B0%83%E5%88%B6"><span class="nav-number"></span> <span class="nav-text">2 沟道长度调制</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%CE%BB%E5%92%8CL%E6%88%90%E5%8F%8D%E6%AF%94"><span class="nav-number"></span> <span class="nav-text">λ和L成反比</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3%E4%BA%9A%E9%98%88%E5%80%BC%E5%AF%BC%E7%94%B5%E6%80%A7"><span class="nav-number"></span> <span class="nav-text">3亚阈值导电性</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#6-25"><span class="nav-number">1.</span> <span class="nav-text">6.25</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#6-26"><span class="nav-number">2.</span> <span class="nav-text">6.26</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8D%95%E6%9E%81%E6%94%BE%E5%A4%A7%E5%99%A8"><span class="nav-number"></span> <span class="nav-text">单极放大器</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%85%AB%E8%BE%B9%E5%BD%A2%E6%B3%95%E5%88%99"><span class="nav-number"></span> <span class="nav-text">八边形法则</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%85%B1%E6%BA%90%E6%9E%81"><span class="nav-number"></span> <span class="nav-text">共源极</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#6-27"><span class="nav-number">1.</span> <span class="nav-text">6.27</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B0%8F%E4%BF%A1%E5%8F%B7%E6%A8%A1%E5%9E%8B%EF%BC%9A"><span class="nav-number"></span> <span class="nav-text">小信号模型：</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#6-28"><span class="nav-number">1.</span> <span class="nav-text">6.28</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#mos%E5%99%A8%E4%BB%B6%E7%94%B5%E5%AE%B9"><span class="nav-number"></span> <span class="nav-text">mos器件电容</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%88%91%E4%BB%AC%E7%BB%99%E7%94%B5%E5%AE%B9%E5%88%86%E4%B8%BA%E4%BB%A5%E4%B8%8B%E5%87%A0%E7%B1%BB"><span class="nav-number"></span> <span class="nav-text">我们给电容分为以下几类</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#7-1"><span class="nav-number">1.</span> <span class="nav-text">7.1</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#7-8"><span class="nav-number">2.</span> <span class="nav-text">7.8</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -289,109 +310,17 @@ mjx-container[display="true"] + br {
 
     </div>
 
-    <div class="main-inner index posts-expand">
+    <div class="main-inner post posts-expand">
 
-    
+
+  
 
 
 <div class="post-block">
   
   
 
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://armke.github.io/%E5%9F%BA%E4%BA%8Estm32-rc522%E7%9A%84%E9%97%A8%E7%A6%81%E7%B3%BB%E7%BB%9F.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/head.jpg">
-      <meta itemprop="name" content="Armke">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Armke的笔记">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Armke的笔记">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/%E5%9F%BA%E4%BA%8Estm32-rc522%E7%9A%84%E9%97%A8%E7%A6%81%E7%B3%BB%E7%BB%9F.html" class="post-title-link" itemprop="url">基于stm32+rc522的门禁系统</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2024-07-09 15:28:26 / 修改时间：11:01:16" itemprop="dateCreated datePublished" datetime="2024-07-09T15:28:26+08:00">2024-07-09</time>
-    </span>
-
-  
-    <span class="post-meta-break"></span>
-    <span class="post-meta-item" title="本文字数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">本文字数：</span>
-      <span>926</span>
-    </span>
-    <span class="post-meta-item" title="阅读时长">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>3 分钟</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="基于stm32-rc522的门禁系统"><a href="#基于stm32-rc522的门禁系统" class="headerlink" title="基于stm32+rc522的门禁系统"></a><div align = "center">基于stm32+rc522的门禁系统</div></h1><p>元器件：stm32f103c8t6，RC522，MG90S舵机</p>
-<p>所有的代码放在这里了：<a target="_blank" rel="noopener" href="https://gitee.com/armgpio/access-control-system">https://gitee.com/armgpio/access-control-system</a></p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/%E5%9F%BA%E4%BA%8Estm32-rc522%E7%9A%84%E9%97%A8%E7%A6%81%E7%B3%BB%E7%BB%9F.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://armke.github.io/%E6%A8%A1%E9%9B%86.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -405,13 +334,13 @@ mjx-container[display="true"] + br {
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Armke的笔记">
+      <meta itemprop="name" content="模集 | Armke的笔记">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/%E6%A8%A1%E9%9B%86.html" class="post-title-link" itemprop="url">模集</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          模集
+        </h1>
 
         <div class="post-meta-container">
           <div class="post-meta">
@@ -432,6 +361,13 @@ mjx-container[display="true"] + br {
     </span>
 
   
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
     <span class="post-meta-break"></span>
     <span class="post-meta-item" title="本文字数">
       <span class="post-meta-item-icon">
@@ -455,8 +391,7 @@ mjx-container[display="true"] + br {
     
     
     
-    <div class="post-body" itemprop="articleBody">
-          <h5 id="6-22"><a href="#6-22" class="headerlink" title="6.22"></a>6.22</h5><h1 id="MOSFET结构"><a href="#MOSFET结构" class="headerlink" title="MOSFET结构"></a>MOSFET结构</h1><p>NMOS结构：</p>
+    <div class="post-body" itemprop="articleBody"><h5 id="6-22"><a href="#6-22" class="headerlink" title="6.22"></a>6.22</h5><h1 id="MOSFET结构"><a href="#MOSFET结构" class="headerlink" title="MOSFET结构"></a>MOSFET结构</h1><p>NMOS结构：</p>
 <p>衬底为P型，重参杂n区形成源级和漏级，重参杂的多晶硅为栅极，有一层SiO2使得栅极和衬底隔离，此为增强型nmos，源极和漏极是对称的。</p>
 <p>源级提供载流子，漏级收集载流子</p>
 <p>NMOS的衬底必须接系统最低电压</p>
@@ -556,7 +491,6 @@ mjx-container[display="true"] + br {
 <p>RD无穷大如何实现？</p>
 <p>在负载接入理想电流源，那么输入电阻就是无穷大的</p>
 
-      
     </div>
 
     
@@ -564,430 +498,25 @@ mjx-container[display="true"] + br {
     
 
     <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
 
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://armke.github.io/%E6%A8%A1%E7%94%B5.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/head.jpg">
-      <meta itemprop="name" content="Armke">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Armke的笔记">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Armke的笔记">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/%E6%A8%A1%E7%94%B5.html" class="post-title-link" itemprop="url">模电</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2024-06-21 11:34:41" itemprop="dateCreated datePublished" datetime="2024-06-21T11:34:41+08:00">2024-06-21</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-06-22 08:49:54" itemprop="dateModified" datetime="2024-06-22T08:49:54+08:00">2024-06-22</time>
-    </span>
-
-  
-    <span class="post-meta-break"></span>
-    <span class="post-meta-item" title="本文字数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">本文字数：</span>
-      <span>196</span>
-    </span>
-    <span class="post-meta-item" title="阅读时长">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>1 分钟</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="二极管"><a href="#二极管" class="headerlink" title="二极管"></a>二极管</h1><p>单向导电性</p>
-<h4 id="伏安特性："><a href="#伏安特性：" class="headerlink" title="伏安特性："></a>伏安特性：</h4><p><img src="https://github.com/Armke/Armke.github.io/blob/main/img/modian/%E4%BA%8C%E6%9E%81%E7%AE%A1%E4%BC%8F%E5%AE%89%E7%89%B9%E6%80%A7.png?raw=true"></p>
-<p>影响因素：温度</p>
-<p>有一个最大工作频率，超过了就没有单向导电性</p>
-<h4 id="稳压二极管："><a href="#稳压二极管：" class="headerlink" title="稳压二极管："></a>稳压二极管：</h4><p><img src="https://github.com/Armke/Armke.github.io/blob/main/img/modian/%E7%A8%B3%E5%8E%8B%E4%BA%8C%E6%9E%81%E7%AE%A1.png?raw=true"></p>
-<p>工作在反向击穿状态，击穿之后电压变化小，有一个最大电流要求（额定功率）</p>
-<h4 id="bjt共射："><a href="#bjt共射：" class="headerlink" title="bjt共射："></a>bjt共射：</h4><p>1，发射结加正向电压，扩散运动形成发射极电流Ie</p>
-<p>2，扩散到基区的自由电子与空穴复合形成基级电流Ib</p>
-<p>3，集电极加反向电压，漂移运动形成集电极电流Ic</p>
-<p>Ie&#x3D;Ic+Ib</p>
-<h4 id="共射放大倍数B："><a href="#共射放大倍数B：" class="headerlink" title="共射放大倍数B："></a>共射放大倍数B：</h4><p>B&#x3D;ic&#x2F;ib</p>
-<p>直流放大系数</p>
-<h1 id="FET（场效应管）"><a href="#FET（场效应管）" class="headerlink" title="FET（场效应管）"></a>FET（场效应管）</h1><p><img src="https://github.com/Armke/Armke.github.io/blob/main/img/modian/FET.png?raw=true"></p>
-<p>g栅极      d漏级     s源级</p>
-<p>dgs类比cbe</p>
-<p>在Ugs之间加上反向电压，Uds加上正向电压</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://armke.github.io/PCB.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/head.jpg">
-      <meta itemprop="name" content="Armke">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Armke的笔记">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Armke的笔记">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/PCB.html" class="post-title-link" itemprop="url">PCB</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2024-06-06 20:16:05" itemprop="dateCreated datePublished" datetime="2024-06-06T20:16:05+08:00">2024-06-06</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-06-11 18:26:40" itemprop="dateModified" datetime="2024-06-11T18:26:40+08:00">2024-06-11</time>
-    </span>
-
-  
-    <span class="post-meta-break"></span>
-    <span class="post-meta-item" title="本文字数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">本文字数：</span>
-      <span>463</span>
-    </span>
-    <span class="post-meta-item" title="阅读时长">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>2 分钟</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h3 id="在根据数据手册画封装时，需要对原尺寸进行补偿，否则可能会导致虚焊。"><a href="#在根据数据手册画封装时，需要对原尺寸进行补偿，否则可能会导致虚焊。" class="headerlink" title="在根据数据手册画封装时，需要对原尺寸进行补偿，否则可能会导致虚焊。"></a>在根据数据手册画封装时，需要对原尺寸进行补偿，否则可能会导致虚焊。</h3><p>将焊盘的长度稍微增加即可，注意丝印不要打在焊盘上，所以需要将丝印打断。edit-slice..</p>
-<h3 id="检查封装"><a href="#检查封装" class="headerlink" title="检查封装"></a>检查封装</h3><p>1 是否居中（快捷键efc）</p>
-<p>2 丝印是否位于其他层以及是否覆盖焊盘</p>
-<p>3 注意1∠标识</p>
-<p>4 没必要的丝印删除</p>
-<h3 id="板框导入"><a href="#板框导入" class="headerlink" title="板框导入"></a>板框导入</h3><p>导入cad文件，file–import–DXF&#x2F;DWG</p>
-<h4 id=""><a href="#" class="headerlink" title=""></a><img src="https://github.com/Armke/Armke.github.io/blob/main/img/1.png?raw=true"></h4><h3 id="import-as-components-表示以器件导入"><a href="#import-as-components-表示以器件导入" class="headerlink" title="import as components 表示以器件导入"></a>import as components 表示以器件导入</h3><p>下面表示导入到层数，将所有全部倒入机械1层即可</p>
-<p>然后再将顶视图和底视图分别改到机械2层</p>
-<h3 id="定义板框"><a href="#定义板框" class="headerlink" title="定义板框"></a>定义板框</h3><p>将板框放置到机械一层</p>
-<p>design–board shape–Define from selected objects</p>
-<p>重新定义板框形状</p>
-<h3 id="结构器件精准定位"><a href="#结构器件精准定位" class="headerlink" title="结构器件精准定位"></a>结构器件精准定位</h3><h4 id="丝印放中心-A-position-Component-Text"><a href="#丝印放中心-A-position-Component-Text" class="headerlink" title="丝印放中心 A-position Component Text"></a>丝印放中心 A-position Component Text</h4><h4 id="角度旋转自定义角度-TP-，给空格旋转改为1°，-这样通过不断修改空格就可以达到我们想要的角度"><a href="#角度旋转自定义角度-TP-，给空格旋转改为1°，-这样通过不断修改空格就可以达到我们想要的角度" class="headerlink" title="角度旋转自定义角度 TP ，给空格旋转改为1°， 这样通过不断修改空格就可以达到我们想要的角度"></a>角度旋转自定义角度 TP ，给空格旋转改为1°， 这样通过不断修改空格就可以达到我们想要的角度</h4><p>固定器件放置之后记得锁定</p>
-<h4 id="层叠"><a href="#层叠" class="headerlink" title="层叠"></a>层叠</h4><p>将两层板转换为四层板，Design–Layer Stack Manager</p>
-<p>四层板相对于两层板多了电源层和信号层</p>
-<p>常见四层结构：</p>
-<p>1，地-信号-信号-电源</p>
-<p>2，信号-电源-地-信号</p>
-<p>3，信号-地-电源-信号</p>
-<h4 id="20H原则"><a href="#20H原则" class="headerlink" title="20H原则"></a>20H原则</h4><p>指的是，电源层相对地层内缩20H的距离，是为了抑制边缘辐射效应。在板的边缘会向外辐射电磁干扰。经验来说，电源相对于地内缩40mil即可</p>
-<p>可设置，地相对板边内缩20mil，电源相对内缩60mil。</p>
-<p>焊盘采用十字连接，过孔采用全连接。</p>
-<h4 id="差分走线"><a href="#差分走线" class="headerlink" title="差分走线"></a>差分走线</h4><p> 右下角 PCB -差分对象–add手动添加，来进行匹配</p>
-<h4 id="布线规则"><a href="#布线规则" class="headerlink" title="布线规则"></a>布线规则</h4><p>1，从最密集地方布线</p>
-<h3 id="-1"><a href="#-1" class="headerlink" title=""></a></h3>
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://armke.github.io/Typora%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/head.jpg">
-      <meta itemprop="name" content="Armke">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Armke的笔记">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Armke的笔记">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/Typora%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7.html" class="post-title-link" itemprop="url">Typora使用技巧</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2023-01-06 22:40:37" itemprop="dateCreated datePublished" datetime="2023-01-06T22:40:37+08:00">2023-01-06</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-07-09 16:06:00" itemprop="dateModified" datetime="2024-07-09T16:06:00+08:00">2024-07-09</time>
-    </span>
-
-  
-    <span class="post-meta-break"></span>
-    <span class="post-meta-item" title="本文字数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">本文字数：</span>
-      <span>128</span>
-    </span>
-    <span class="post-meta-item" title="阅读时长">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>1 分钟</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h3 id="文本居中"><a href="#文本居中" class="headerlink" title="文本居中"></a>文本居中</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;div align = &quot;center&quot;&gt;要居中的文字&lt;/div&gt;</span><br></pre></td></tr></table></figure>
-
-<h3 id="首行缩进2字符"><a href="#首行缩进2字符" class="headerlink" title="首行缩进2字符"></a>首行缩进2字符</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&amp;emsp;</span><br></pre></td></tr></table></figure>
-
-
-
-<blockquote>
-<p>如果要是用的Typora写markdown文章，开头的<code>Front-matter</code>应该指定路径；</p>
-<p>如：<code>typora-root-url: ./最近在看老舍的书籍-我为什么喜欢这类书籍？/</code></p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 最近在看老舍的书籍 我为什么喜欢这类书籍？</span><br><span class="line">tags:</span><br><span class="line">    - 你为什么贫穷</span><br><span class="line">categories:</span><br><span class="line">    - 个人见解</span><br><span class="line">date: 2023-02-18 21:16:57</span><br><span class="line">typora-root-url: ./最近在看老舍的书籍-我为什么喜欢这类书籍？/</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://armke.github.io/blog%E6%90%AD%E5%BB%BA%E6%80%BB%E7%BB%93.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/head.jpg">
-      <meta itemprop="name" content="Armke">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Armke的笔记">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Armke的笔记">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/blog%E6%90%AD%E5%BB%BA%E6%80%BB%E7%BB%93.html" class="post-title-link" itemprop="url">blog搭建总结</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2023-01-06 22:28:18" itemprop="dateCreated datePublished" datetime="2023-01-06T22:28:18+08:00">2023-01-06</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-07-09 11:01:03" itemprop="dateModified" datetime="2024-07-09T11:01:03+08:00">2024-07-09</time>
-    </span>
-
-  
-    <span class="post-meta-break"></span>
-    <span class="post-meta-item" title="本文字数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">本文字数：</span>
-      <span>111</span>
-    </span>
-    <span class="post-meta-item" title="阅读时长">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>1 分钟</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="blog搭建总结"><a href="#blog搭建总结" class="headerlink" title="blog搭建总结"></a><div align = "center">blog搭建总结</div></h1><h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><p>这篇博客用于记录整个网站搭建过程中所遇到的问题以及解决方案</p>
-<h2 id="关于无法打开tags"><a href="#关于无法打开tags" class="headerlink" title="关于无法打开tags"></a>关于无法打开tags</h2>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/blog%E6%90%AD%E5%BB%BA%E6%80%BB%E7%BB%93.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
         
-      
-    </div>
 
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/%E6%A8%A1%E7%94%B5.html" rel="prev" title="模电">
+                  <i class="fa fa-angle-left"></i> 模电
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/%E5%9F%BA%E4%BA%8Estm32-rc522%E7%9A%84%E9%97%A8%E7%A6%81%E7%B3%BB%E7%BB%9F.html" rel="next" title="基于stm32+rc522的门禁系统">
+                  基于stm32+rc522的门禁系统 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
     </footer>
   </article>
 </div>
+
 
 
 
